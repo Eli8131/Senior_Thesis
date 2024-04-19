@@ -26,7 +26,7 @@ This repository contains examples of the code used to filter datasets by tidal b
 ### All below folders/files are contained within `Velocity Filtering and KE Estimation` folder
 `inertial`:
 
-1) `eul_inert_new.py`: Used to filter around inertial frequency and estimate Eulerian KE.
+1) `eul_inert.py`: Used to filter around inertial frequency and estimate Eulerian KE.
 
 2) `lag_inertial_filtering.py`: Used to filter around inertial frequency and estimate Lagrangian KE.
 
@@ -34,7 +34,7 @@ This repository contains examples of the code used to filter datasets by tidal b
 
 `LF`
 
-1) `butter_withmean.py`: Used to apply a lowpass filter to the Lagrangian velocities.
+1) `lag_LF.py`: Used to apply a lowpass filter to the Lagrangian velocities.
 
 2) `lag_LF_15m_stats2d.py`: Used to estimate KE and bin in 1/2 degree lat and lon bins from the output of `butter_withmean.py`.
 
@@ -46,9 +46,9 @@ This repository contains examples of the code used to filter datasets by tidal b
 
 `SD_D`:
 
-1) `eul_wavelet_new_cc.py`: Used to apply a bandpass filter to the Eulerian velocities around the D and SD bands and estimate the 'clockwise' KE. This is combined with the 'counterclockwise' energy to get the total.
+1) `eul_wavelet_cc.py`: Used to apply a bandpass filter to the Eulerian velocities around the D and SD bands and estimate the 'clockwise' KE. This is combined with the 'counterclockwise' energy to get the total.
 
-2) `wavelet_0m_D_SD.py`: Used to apply a bandpass filter to the Lagrangian velocities around the D and SD bands and estimate the KE.
+2) `lag_wavelet_0m_D_SD.py`: Used to apply a bandpass filter to the Lagrangian velocities around the D and SD bands and estimate the KE.
 
 3) `Figures`: Contains all SD and D figures.
 
@@ -56,6 +56,6 @@ This repository contains examples of the code used to filter datasets by tidal b
 
 1) `eul_var.py`: Used to estimate unfiltered Eulerian KE.
 
-2) `var_density_0m.py`: Used to estimate the unfiltered Lagrangian KE.
+2) `lag_var.py`: Used to estimate the unfiltered Lagrangian KE.
 
 3) `Figures`: Contains all unfiltered figures.
