@@ -6,6 +6,8 @@ This repository contains examples of the code used to filter datasets by tidal b
 
 `Velocity Filtering and KE Estimation`: This directory holds all Python scripts used to filter the data around specific tidal bands (D, SD, LF, inertial) and estimate the oceanic KE in each band. KE maps and ratio figures comparing Eulerian and Lagrangian calculations are included.
 
+Note: Figure files are centered around the 'step' for which they are named: 31-Jan-2014, 02-Mar-2014, 01-Apr-2014, 01-May-2014, 31-May-2014, 30-Jun-2014, 30-Jul-2014, 29-Aug-2014, 28-Sep-2014, 28-Oct-2014, 27-Nov-2014
+
 ### All below folders/files are contained within `Spectral Analysis` folder
 `Global Spectra`: 
 
