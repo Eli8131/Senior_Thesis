@@ -1,5 +1,5 @@
 # Symposium_2024
-This repository contains examples of the code used in Eli Faigle's 2024 Senior Thesis to filter datasets by tidal band and estimate oceanic kinetic energy. The resulting figures are also here.
+Currently a work in progress. This repository contains examples of the code used in Eli Faigle's 2024 Senior Thesis to filter datasets by tidal band and estimate oceanic kinetic energy. The resulting figures are also here. 
 
 # File List:
 `Spectral Analysis`: This directory holds all Python scripts and figures related to globally-averaged spectra and latitudinally-averaged spectra.
