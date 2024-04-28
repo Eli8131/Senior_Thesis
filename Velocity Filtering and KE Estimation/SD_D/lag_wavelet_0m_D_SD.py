@@ -95,7 +95,7 @@ for i in list11:
                   )
     dsout2=dsout2.chunk('auto')
 
-    dsout1.to_zarr('/projectnb/msldrift/tidaldrift/faigle/filtered_wavelet/D/hycom_D_0m_'+str(int(i))+'_zpzn.zarr')
+    dsout1.to_zarr('/projectnb/msldrift/tidaldrift/faigle/filtered_wavelet/D/hycom_D_0m_'+str(int(i))+'_zpzn_03.zarr')
     dsout2.to_zarr('/projectnb/msldrift/tidaldrift/faigle/filtered_wavelet/SD/hycom_SD_0m_'+str(int(i))+'_zpzn_03.zarr')
 
 
