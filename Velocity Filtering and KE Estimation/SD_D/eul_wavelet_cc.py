@@ -43,11 +43,11 @@ def myfun(u,v,gamma,beta,omega,time_axis=-1):
     return var
 
 i = 1
-#open subsampled eulerian dataset
+# open subsampled eulerian dataset
 ds = xr.open_zarr('/scratch/tidaldrift/hycom_ss/hycom12_step_'+str(int(i))+'_0m_E3.zarr',chunks="auto")
-#create empty array for loop
+# create empty array for loop
 eke = np.full(ds["Latitude"].shape, np.nan)
-#apply_ufunc for myfun
+# apply_ufunc for myfun
 # loop over the Y dimension
 for j in range(eke.shape[0]):
     eke_tmp = xr.apply_ufunc(myfun,ds["u"][:,j,:],ds["v"][:,j,:],gamma,beta,omega,
@@ -59,5 +59,5 @@ for j in range(eke.shape[0]):
                             )
     eke[j,:] = eke_tmp
 
-#save file        
+# save file        
 np.save('/projectnb/msldrift/tidaldrift/faigle/eul_wavelet_new/SD_XY/eul_SD_eke_step_'+str(int(i))+'_0m_cc_03.npy', eke)
